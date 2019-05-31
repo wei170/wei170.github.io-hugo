@@ -56,7 +56,7 @@ disableLanguages        = [""]
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
-    header                = "Hugo Future Imperfect Slim"
+    header                = "Guocheng's space"
     paragraph             = "Another fine, responsive site template by <a href='http://html5up.net'>HTML5 UP</a>."
     rssIntro              = true
     socialIntro           = true
@@ -64,11 +64,11 @@ disableLanguages        = [""]
     # This appears at the top of the sidebar above params.intro.header.
     # A width of less than 100px is recommended from a design perspective.
     [params.intro.pic]
-      src                 = "/img/main/logo.jpg"
+      src                 = "/img/main/avatar.jpg"
       # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
       shape               = "circle"
-      width               = ""
-      alt                 = "Hugo Future Imperfect Slim"
+      width               = "80"
+      alt                 = "avatar"
 
   [params.sidebar]
     about               = "test"
@@ -220,47 +220,47 @@ disableLanguages        = [""]
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github                = "pacollins/hugo-future-imperfect-slim"
-  gitlab                = ""
-  stackoverflow         = "" # User Number
-  bitbucket             = ""
-  jsfiddle              = ""
-  codepen               = ""
+  github                = "wei170"
+  # gitlab                = "wei170"
+  # stackoverflow         = "" # User Number
+  # bitbucket             = ""
+  # jsfiddle              = ""
+  # codepen               = ""
   # Visual Art Communities
-  deviantart            = ""
-  flickr                = "example"
-  behance               = ""
-  dribbble              = ""
+  # deviantart            = ""
+  # flickr                = "example"
+  # behance               = ""
+  # dribbble              = ""
   # Publishing Communities
   wordpress             = ""
   medium                = ""
   # Professional/Business Oriented Communities
-  linkedin              = "example"
-  linkedin_company      = "examplebusiness"
-  foursquare            = ""
-  xing                  = ""
-  slideshare            = ""
+  linkedin              = "wei170"
+  # linkedin_company      = ""
+  # foursquare            = ""
+  # xing                  = ""
+  # slideshare            = ""
   # Social Networks
-  facebook              = "example"
-  googleplus            = ""
-  reddit                = "example"
-  quora                 = ""
-  youtube               = ""
-  vimeo                 = ""
-  whatsapp              = "" # WhatsApp Number
+  # facebook              = ""
+  # googleplus            = ""
+  # reddit                = ""
+  # quora                 = ""
+  # youtube               = ""
+  # vimeo                 = ""
+  # whatsapp              = "" # WhatsApp Number
     # WeChat and QQ need testing.
     wechat              = ""
     qq                  = "" # User ID Number
-  instagram             = "example"
-  tumblr                = ""
-  twitter               = "example"
-  skype                 = ""
-  snapchat              = ""
-  pinterest             = "example"
-  telegram              = "example"
-  vine                  = ""
-  googlescholar         = ""
-  orcid                 = ""
-  researchgate          = "example"
+  # instagram             = "example"
+  # tumblr                = ""
+  # twitter               = "example"
+  # skype                 = ""
+  # snapchat              = ""
+  # pinterest             = "example"
+  # telegram              = "example"
+  # vine                  = ""
+  # googlescholar         = ""
+  # orcid                 = ""
+  # researchgate          = "example"
   # Email
-  email                 = "example"
+  email                 = "guochengwei170@gmail.com"
