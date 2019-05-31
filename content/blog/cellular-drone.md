@@ -60,9 +60,8 @@ So I decided to run experiments at the maximum 10m in height to decrease the inf
 
 ## Architecture
 
-![Figure 1: Architecture Diagram](/img/2019/05/cloud_diagram.png)
-
-Figure 1: Architecture Diagram
+<img src="/img/2019/05/cloud_diagram.png" style="width: 100%;" alt="Figure 1: Architecture Diagram">
+<h5 aligh="center">Figure 1: Architecture Diagram</h5>
 
 ### Specs
 1. DJI Phantom 4 Pro v2.0
@@ -78,7 +77,7 @@ Figure 1: Architecture Diagram
 8. AT&T
 	I run all experiments in the AT&T network.
 
-[Cellular Drone Project Development](/blog/cellular-drone-development) is the blog focused on the details of the development.
+[Cellular Drone Project Development](/blog/cellular-drone-development) is the blog focused on the details of the development. If you are interested in how I implemented all these, go check it out.
 
 ### Network Communication
 
@@ -87,9 +86,9 @@ As shown in the Figure 1, RC and DR communicate with the server with both HTTP a
 ## Latency Analysis
 
 ### Overall Latency
-![Figure 2: Overall Latency](/img/2019/05/all_boxplot_flight_ctrl_msgs.png)
 
-Figure 2: Overall Latency
+<img src="/img/2019/05/all_boxplot_flight_ctrl_msgs.png" style="height: 30em; float: left;" alt="Figure 2: Overall Latency">
+<h5 aligh="center">Figure 2: Overall Latency</h5>
 
 This project is mainly focused on the end-to-end latency of the flight control message. So the difference between the time when a flight control message is generated on the RC and the time when the flight control message is received by the DR and executed on the drone. Therefore, there are three main factors of the latency: overhead on both phones, network latency, and overhead on the server.
 
@@ -97,14 +96,14 @@ I run the experiment for 10 rounds. However, 7 of them have valid and complete d
 
 In Figure 3, we can see that the latency can decrease down to 113ms and increase to 950ms. So we need to breakdown each latency to expose the bottleneck.
 
-![Figure 3: Every Round End-to-End Latency](/img/2019/05/boxplot_every_round_flight_ctrl_msgs.png)
-Figure 3: Every Round End-to-End Latency
+<img src="/img/2019/05/boxplot_every_round_flight_ctrl_msgs.png" style="width: 100%;" alt="Figure 3: Every Round End-to-End Latency">
+<h5 aligh="center">Figure 3: Every Round End-to-End Latency</h5>
 
 ### Breakdown
 The latency will be breakdown based on the three main factors mentioned before. After the breakdown, we will visualize which section is the root cause of the high latency.
 
-![Figure 4: Latency Breakdown](/img/2019/05/boxplot_breakdown.png)
-Figure 4: Latency Breakdown
+<img src="/img/2019/05/boxplot_breakdown.png" style="width: 100%;" alt="Figure 4: Latency Breakdown">
+<h5 aligh="center">Figure 4: Latency Breakdown</h5>
 
 Figure 4 is the breakdown of one experiment. It clearly shows that the server overhead is the obstacle of the overall latency. The RC overhead, HTTP RRT and WS latency are all very stable and low. The DR overhead is stable most of the time, below 10ms, but can be over 300ms in some edge cases due to the execution time of the drone.
 
