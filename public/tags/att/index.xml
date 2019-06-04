@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AT&amp;T on Guocheng&#39;s Space</title>
+    <link>https://wei170.github.io/tags/att/</link>
+    <description>Recent content in AT&amp;T on Guocheng&#39;s Space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 31 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wei170.github.io/tags/att/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cellular Drone</title>
+      <link>https://wei170.github.io/blog/cellular-drone/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wei170.github.io/blog/cellular-drone/</guid>
+      <description>Thanks! Photo by Jacob Owens on Unsplash
+Motivation Over the past few years, drones have become central to the functions of various businesses and governmental organizations and have managed to pierce through areas where certain industries were either stagnant or lagging behind.
+However, almost all the commercial drones are controlled with the remote controller via the WiFi connection, which highly restricts the scope of the mobility and scale of discovery.</description>
+    </item>
+    
+  </channel>
+</rss>

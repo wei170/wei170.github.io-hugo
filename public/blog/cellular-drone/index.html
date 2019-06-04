@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Cellular Drone - Guocheng&#39;s Space</title>
+<meta name="description" content="Connect Drones Into Cellular Network">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  
+<meta itemprop="name" content="Cellular Drone">
+<meta itemprop="description" content="Connect Drones Into Cellular Network">
+
+
+<meta itemprop="datePublished" content="2019-05-31T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-31T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1371">
+
+
+
+<meta itemprop="keywords" content="MobileInsight,LTE,DJI,AT&amp;T,Latency,Drone,GCP," />
+
+  <meta property="og:title" content="Cellular Drone" />
+<meta property="og:description" content="Connect Drones Into Cellular Network" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wei170.github.io/blog/cellular-drone/" />
+<meta property="article:published_time" content="2019-05-31T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-05-31T00:00:00&#43;00:00"/>
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cellular Drone"/>
+<meta name="twitter:description" content="Connect Drones Into Cellular Network"/>
+
+  
+
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+  
+    
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+      <link rel="stylesheet" href="/css/main.min.css">
+      <link rel="stylesheet" href="/css/add-on.css">
+    
+  
+  
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            Blog
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        <a href="/" class="link"><i class="fas fa-home">&nbsp;</i>Home</a>
+      
+        <a href="/about/" class="link"><i class="far fa-id-card">&nbsp;</i>About</a>
+      
+        <a href="/blog/" class="link"><i class="far fa-newspaper">&nbsp;</i>Blog</a>
+      
+        <a href="/categories/" class="link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
+      
+        <a href="/contact/" class="link"><i class="far fa-envelope">&nbsp;</i>Contact</a>
+      
+      <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      
+
+    </menu>
+    
+
+    <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="lang-toggle" lang="en"><span class="flag-icon flag-icon-en" alt="en"></span></a>
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="lang-menu" class="flyout-menu">
+  <a href="#" lang="en" class="active"><span class="flag-icon flag-icon-en" alt="en"></span></a>
+  
+    
+      
+    
+      
+        <a href="/cn" lang="cn" class="no-lang"><span class="flag-icon flag-icon-cn" alt="cn"></span></a>
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu">
+      <h1>Share Post</h1>
+      
+
+
+
+  
+    <a href="//twitter.com/share?url=&amp;text=&amp" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//reddit.com/submit?url=&amp;title=" target="_blank" rel="noopener" class="share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=&amp;title=" target="_blank" rel="noopener" class="share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.stumbleupon.com/submit?url=&amp;title=" target="_blank" rel="noopener" class="share-btn stumbleupon">
+          <i class="fab fa-stumbleupon"></i><p>&nbsp;StumbleUpon</p>
+        </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=&amp;description=" target="_blank" rel="noopener" class="share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check out this post by &amp;body=" target="_blank" class="share-btn email">
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="/"><img src="/img/main/avatar.jpg" class="circle" width="80" alt="avatar" /></a>
+  <header>
+    <h1>Guocheng Wei</h1>
+  </header>
+  <main>
+    <p>I will share my side projects, paper readings, trending news, and my life here with you.</p>
+  </main>
+  
+    <footer>
+      <ul class="social-icons">
+        
+
+        <li><a href="//github.com/wei170" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/wei170" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:guochengwei170@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+        <h2><a href="/blog/cellular-drone/">Cellular Drone</a></h2>
+    
+    
+        <p>Connect Drones Into Cellular Network</p>
+    
+</div>
+  <div class="meta">
+    <time class="published" datetime="2019-05-31 00:00:00 &#43;0000 UTC">
+      May 31, 2019
+    </time>
+    <span class="author">Guocheng Wei</span>
+    
+        <p>7 minute read</p>
+    
+  </div>
+</header>
+
+  <section id="social-share">
+    
+
+
+
+  
+    <a href="//twitter.com/share?url=&amp;text=&amp" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//reddit.com/submit?url=&amp;title=" target="_blank" rel="noopener" class="share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=&amp;title=" target="_blank" rel="noopener" class="share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.stumbleupon.com/submit?url=&amp;title=" target="_blank" rel="noopener" class="share-btn stumbleupon">
+          <i class="fab fa-stumbleupon"></i><p>&nbsp;StumbleUpon</p>
+        </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=&amp;description=" target="_blank" rel="noopener" class="share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check out this post by &amp;body=" target="_blank" class="share-btn email">
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+<a href="/blog/cellular-drone/" class="image featured">
+  <img src="/img/2019/05/release_drone.jpg" alt="Release Drone">
+</a>
+
+
+  <div class="content">
+    
+
+<h1 id="thanks">Thanks!</h1>
+
+<p>Photo by <a href="https://unsplash.com/@jakobowens1?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jacob Owens</a> on <a href="https://unsplash.com/search/photos/drone-dji?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+
+<hr />
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Over the past few years, drones have become central to the functions of various businesses and governmental organizations and have managed to pierce through areas where certain industries were either stagnant or lagging behind.</p>
+
+<p>However, almost all the commercial drones are controlled with the remote controller via the WiFi connection, which highly restricts the scope of the mobility and scale of discovery. In addition, the WiFi network is not secure. The attacker can easily disconnects the controller by changing the SSID and immediately reconnects and is then able to transmit commands though the malicious drone to the hijacked drone.</p>
+
+<p>Besides, there are no centralized platform like other IoT devices to monitor and control multiple devices at the same time. All commercial drones are controlled in VLOS, Visual Line-of-Sight. In the future, drones need to have the ability to free-up pilots and go Beyond VLOS. A centralized platform can achieve this easily no matter the drone is autonomous or non-autonomous.</p>
+
+<p>Also, the industry demands of the drone will not be limited to entertainment and photography. Live streaming video, package delivery and rescue mission will push the drones to be connected to the cellular network in order to free up their mobility.</p>
+
+<h2 id="problem">Problem</h2>
+
+<p>If aerial vehicles are connected to the cellular network, the first application will be the Beyond-VLOS control. BVLOS needs more sensors and cameras equipped on the drone. The reason is that the first-view camera is not enough to monitor the status of the drone. More sensors and cameras can enhance the accuracy and improve the detection of their surroundings. But it will introduced more data in the network. At the same time, the increase of amount of data should not lag the control speed.</p>
+
+<p>Second concern is the collision avoidance system. BVLOS drones should have the ability to communicate with nearby drones to avoid collision. If the latency is high and drones cannot react in short period of time, accidents may happen.</p>
+
+<p>The last concern is that in the future 5G network, the benchmark for the latency cellular drones is 10ms. It is hard to achieve in current LTE network.</p>
+
+<p>So this project will not only focus on the development of the cellular drone application, but also analyze the end-to-end latency in order to achieve the low-latency requirement. The breakdown analysis can help us to observe the bottleneck and reveal the weakest section in this project.</p>
+
+<h2 id="solution">Solution</h2>
+
+<p>I break down the entire development into three main parts.</p>
+
+<ul>
+<li>Android App
+
+<ul>
+<li>Drone Receptor</li>
+<li>Remote Controller</li>
+</ul></li>
+<li>Server
+
+<ul>
+<li>Host Database (i.e. Drone Status, User, Flight Control Messages, etc.)</li>
+<li>Handle requests</li>
+</ul></li>
+<li>Website
+
+<ul>
+<li>Show data</li>
+<li>Quick mutation</li>
+</ul></li>
+</ul>
+
+<p>Android app serves two main purpose: one is the Drone Receptor (DR) that is directly connected to the drone with a micro-usb, listens to any control message sent to the drone, and sends updates of the drone status to the server; the other is the Remote Controller (RC) that is on the hand of the pilot, sends flight control messages to the server, and listens to any update from the drone.</p>
+
+<h2 id="challenge">Challenge</h2>
+
+<p>Based on the experiments I did before and researches I read, higher altitude and faster speed will introduce higher latency and higher rate of packet loss. Furthermore, due to the interference of neighbor base stations, the rate of attach request failure will increase, which indicates that the handoff events take longer to complete.</p>
+
+<p>So I decided to run experiments at the maximum 10m in height to decrease the influence of these issues and to make sure the flight failure cannot create any accident.</p>
+
+<h2 id="architecture">Architecture</h2>
+
+<p><img src="/img/2019/05/cloud_diagram.png" style="width: 100%;" alt="Figure 1: Architecture Diagram">
+<h5 aligh="center">Figure 1: Architecture Diagram</h5></p>
+
+<h3 id="specs">Specs</h3>
+
+<ol>
+<li>DJI Phantom 4 Pro v2.0</li>
+<li>DJI Android SDK</li>
+<li>GCP
+GCP hosts my server in the cloud. I use Cloud DNS to lower latency and increase scalability, Cloud Load Balancing to scale the application on Google Compute Engine from zero to full-throttle with no pre- warming needed, and a instance group to host a kubernetes container connecting to a PostgreSQL Cloud SQL server.</li>
+<li>PostgreSQL</li>
+<li>GraphQL
+The reason why I chose GraphQL api instead of REST api is because of latency. REST api uses multiple endpoints, and each endpoint will introduce latency. GraphQL api solves this problem by combining and integrating multiple endpoints into one. So it can decrease the end-to-end latency.</li>
+<li>Apollo
+Apollo is the framework of GraphQL that can help me to develop the Android app easier.</li>
+<li>Android</li>
+<li>AT&amp;T
+I run all experiments in the AT&amp;T network.</li>
+</ol>
+
+<p><a href="/blog/cellular-drone-development">Cellular Drone Project Development</a> is the blog focused on the details of the development. If you are interested in how I implemented all these, go check it out.</p>
+
+<h3 id="network-communication">Network Communication</h3>
+
+<p>As shown in the Figure 1, RC and DR communicate with the server with both HTTP and Websocket protocols. One situation is when the pilot user is controlling on the RC, flight control messagess will be sent to the server through the HTTP protocol. When the server receive any message, it will publish the message through the Websocket protocol to the subscribing DR. The other situation is when the status of the drone is updated, DR will send the updates through the HTTP protocol. When the serve receive any update, it will publish the updated status to the listening RC.</p>
+
+<h2 id="latency-analysis">Latency Analysis</h2>
+
+<h3 id="overall-latency">Overall Latency</h3>
+
+<p><img src="/img/2019/05/all_boxplot_flight_ctrl_msgs.png" style="height: 30em; float: left;" alt="Figure 2: Overall Latency">
+<h5 aligh="center">Figure 2: Overall Latency</h5></p>
+
+<p>This project is mainly focused on the end-to-end latency of the flight control message. So the difference between the time when a flight control message is generated on the RC and the time when the flight control message is received by the DR and executed on the drone. Therefore, there are three main factors of the latency: overhead on both phones, network latency, and overhead on the server.</p>
+
+<p>I run the experiment for 10 rounds. However, 7 of them have valid and complete data. The boxplot in Figure 2 shows the median is around 500ms and the interquartile range is from 150ms to 650ms. That number is not adequate to the requirement.</p>
+
+<p>In Figure 3, we can see that the latency can decrease down to 113ms and increase to 950ms. So we need to breakdown each latency to expose the bottleneck.</p>
+
+<p><img src="/img/2019/05/boxplot_every_round_flight_ctrl_msgs.png" style="width: 100%;" alt="Figure 3: Every Round End-to-End Latency">
+<h5 aligh="center">Figure 3: Every Round End-to-End Latency</h5></p>
+
+<h3 id="breakdown">Breakdown</h3>
+
+<p>The latency will be breakdown based on the three main factors mentioned before. After the breakdown, we will visualize which section is the root cause of the high latency.</p>
+
+<p><img src="/img/2019/05/boxplot_breakdown.png" style="width: 100%;" alt="Figure 4: Latency Breakdown">
+<h5 aligh="center">Figure 4: Latency Breakdown</h5></p>
+
+<p>Figure 4 is the breakdown of one experiment. It clearly shows that the server overhead is the obstacle of the overall latency. The RC overhead, HTTP RRT and WS latency are all very stable and low. The DR overhead is stable most of the time, below 10ms, but can be over 300ms in some edge cases due to the execution time of the drone.</p>
+
+<h2 id="future-work">Future Work</h2>
+
+<h3 id="drawbacks">Drawbacks</h3>
+
+<p>There are some main drawbacks in my architecture. The first is the two-hops communication between the RC and DR. If we want to reduce the latency, less hops should be the main thing to focus on. The second is the overhead on the server. Because it upholds more than 50% of the latency. In the future, I need to investigate the causes of the overhead and fix them. The third is the network latency. Unfortunately, Google is not a network provider. Therefore, reducing the RRT is not easy to achieve.</p>
+
+<h3 id="development">Development</h3>
+
+<p>Live streaming video is another essential feature in the commercial drone industry. The DR is able to upload streaming video packets to the server and the server will publish the video packets to the RCs. Therefore, latency, uplink performance and downlink performance will be the KPIs.</p>
+
+<p>Besides, collision avoidance system is also important. It can be divided into two parts: collision avoidance with nearby drones and with static objects. For the first part, the server is responsible to find groups of drones that are near with each other and send them immediate flight control messages to avoid the possible accident. At the same time, send warning notification messages to RCs that are in control of the drones and switch the mode to autonomous. The second part could be achieved by training convolutional neural networks of visual recognition and implementing it on the RCs so that the drones can react to the objects immediately with low latency.</p>
+
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/categories/cellualr-network">Cellualr Network</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/categories/android">Android</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/categories/aerial-vehicle">Aerial Vehicle</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/categories/cloud-service">Cloud Service</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tags">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/tags/mobileinsight">MobileInsight</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/tags/lte">LTE</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/tags/dji">DJI</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/tags/att">AT&amp;T</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/tags/latency">Latency</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/tags/drone">Drone</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://wei170.github.io/tags/gcp">GCP</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+<article class="post">
+  
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+</article>
+<div class="pagination">
+  
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  <section id="recent-posts">
+    <header>
+      <h1>Recent posts</h1>
+    </header>
+    
+    <article class="mini-post">
+      <section>
+        
+<a href="/blog/cellular-drone/" class="image featured">
+  <img src="/img/2019/05/release_drone.jpg" alt="Release Drone">
+</a>
+
+
+      </section>
+      <header>
+        <h1><a href="/blog/cellular-drone/">Cellular Drone</a></h1>
+        <time class="published" datetime="">May 31, 2019</time>
+      </header>
+    </article>
+    
+    
+  </section>
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/aerial-vehicle/">aerial-vehicle<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/android/">android<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/cellualr-network/">cellualr-network<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/cloud-service/">cloud-service<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>Passion in core network, ML, and software engineer. Love food, hiking, and snow skiing.</p>
+    <footer>
+      <a href="/about" class="button">Learn More</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="social-icons">
+        
+
+        <li><a href="//github.com/wei170" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/wei170" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:guochengwei170@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2019
+      
+        Guocheng&#39;s Space
+      
+    .
+    Powered by <a href="//gohugo.io" target="_blank" rel="noopener">Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/html.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/css.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/js.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/toml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src=/js/util.js></script>
+  <script src=/js/main.js></script>
+  <script src=/js/add-on.js></script>
+  
+
+
+
+    </div>
+  </body>
+</html>
