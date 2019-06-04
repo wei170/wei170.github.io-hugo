@@ -1,6 +1,6 @@
-baseurl                 = "https://example.com/"
+baseurl                 = "https://wei170.github.io/"
 DefaultContentLanguage  = "en"
-title                   = "Hugo Future Imperfect Slim"
+title                   = "Guocheng's Space"
 theme                   = "hugo-future-imperfect-slim"
 preserveTaxonomyNames   = true
 paginate                = 3
@@ -31,9 +31,9 @@ disableLanguages        = [""]
 
   [params.meta]
     # Sets the meta tag description
-    description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
+    description         = "I am Guocheng Wei, passionate in core network, ML, and software engineer. Love food, hiking, and snow skiing."
     # Sets the meta tag author
-    author              = "HTML5UP and Hugo"
+    author              = "Guocheng Wei"
     # If you would like to add more comprehensive favicon support passed root
     # directory favicon.ico, utlize this funtion. It is recommened to use
     # https://realfavicongenerator.net to generate your icons as that is the basis
@@ -46,7 +46,7 @@ disableLanguages        = [""]
 
   [params.header]
     # Sets the navbarTitle that appears in the top left of the navigation bar
-    navbarTitle         = "Future Imperfect"
+    navbarTitle         = "Guocheng's Space"
     # Sets navbarTitle to match the section of the website
     dynamicTitles       = true
     searchMenu          = true
@@ -56,8 +56,8 @@ disableLanguages        = [""]
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
-    header                = "Guocheng's space"
-    paragraph             = "Another fine, responsive site template by <a href='http://html5up.net'>HTML5 UP</a>."
+    header                = "Guocheng Wei"
+    paragraph             = "I will share my side projects, paper readings, trending news, and my life here with you."
     rssIntro              = true
     socialIntro           = true
 
@@ -71,7 +71,7 @@ disableLanguages        = [""]
       alt                 = "avatar"
 
   [params.sidebar]
-    about               = "test"
+    about               = "Passion in core network, ML, and software engineer. Love food, hiking, and snow skiing."
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
     postAmount          = 5
     # set to show or to hide categories in the sidebar
@@ -141,76 +141,39 @@ disableLanguages        = [""]
     LanguageName        = "English"
     weight              = 1
 
-  [Languages.fr]
-    languageCode        = "fr"
-    LanguageName        = "Français"
-    title               = "Hugo Future Imperfect Slim in fr"
-    description         = "Un thème de HTML5 UP, porté par Julio Pescador. Slimmed et amélioré par Patrick Collins. Multilingue par StatnMap. Propulsé par Hugo. "
+  [Languages.cn]
+    languageCode        = "cn"
+    LanguageName        = "中文"
+    title               = "GW的博客"
+    description         = ""
     weight              = 2
 
-    [[Languages.fr.menu.main]]
-      name              = "Accueil"
+    [[Languages.cn.menu.main]]
+      name              = "主页"
       url               = "/"
       identifier        = "fas fa-home"
       weight            = 1
 
-    [[Languages.fr.menu.main]]
-      name              = "About"
+    [[Languages.cn.menu.main]]
+      name              = "关于"
       url               = "/about/"
       identifier        = "far fa-id-card"
       weight            = 2
 
-    [[Languages.fr.menu.main]]
-      name              = "Blog"
+    [[Languages.cn.menu.main]]
+      name              = "博客"
       url               = "/blog/"
       identifier        = "far fa-newspaper"
       weight            = 3
 
-    [[Languages.fr.menu.main]]
-      name              = "Catégories"
+    [[Languages.cn.menu.main]]
+      name              = "分类"
       url               = "/categories/"
       identifier        = "fas fa-sitemap"
       weight            = 5
 
-    [[Languages.fr.menu.main]]
-      name              = "Contact"
-      url               = "/contact/"
-      identifier        = "far fa-envelope"
-      weight            = 6
-
-  [Languages.pl]
-    languageCode        = "pl"
-    LanguageName        = "Polskie"
-    title               = "Hugo przyszłość niedoskonała"
-    description         = "Motyw HTML5 UP, przeniesiony przez Julio Pescadora i wzbogacony przez Patricka Collinsa. Wielojęzyczny przez StatnMap. Zasilany przez Hugo."
-    weight              = 2
-
-    [[Languages.pl.menu.main]]
-      name              = "Home"
-      url               = "/"
-      identifier        = "fas fa-home"
-      weight            = 1
-
-    [[Languages.pl.menu.main]]
-      name              = "O mnie"
-      url               = "/about/"
-      identifier        = "far fa-id-card"
-      weight            = 2
-
-    [[Languages.pl.menu.main]]
-      name              = "Blog"
-      url               = "/blog/"
-      identifier        = "far fa-newspaper"
-      weight            = 3
-
-    [[Languages.pl.menu.main]]
-      name              = "Kategorie"
-      url               = "/categories/"
-      identifier        = "fas fa-sitemap"
-      weight            = 5
-
-    [[Languages.pl.menu.main]]
-      name              = "Kontakt"
+    [[Languages.cn.menu.main]]
+      name              = "联系"
       url               = "/contact/"
       identifier        = "far fa-envelope"
       weight            = 6

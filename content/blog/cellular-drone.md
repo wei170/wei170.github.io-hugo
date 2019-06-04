@@ -1,7 +1,7 @@
 +++
 author = "Guocheng Wei"
 categories = ["Cellualr Network", "Android", "Aerial Vehicle", "Cloud Service"]
-tags = ["LTE", "AT&T", "Latency", "Drone", "DJI", "GCP", "Mobileinsight"]
+tags = ["MobileInsight", "LTE", "DJI", "AT&T", "Latency", "Drone", "GCP"]
 date = "2019-05-31"
 description = "Connect Drones Into Cellular Network"
 featured = "release_drone.jpg"
@@ -115,4 +115,4 @@ There are some main drawbacks in my architecture. The first is the two-hops comm
 ### Development
 Live streaming video is another essential feature in the commercial drone industry. The DR is able to upload streaming video packets to the server and the server will publish the video packets to the RCs. Therefore, latency, uplink performance and downlink performance will be the KPIs.
 
-Besides, collision avoidance system is also important. It can be divided into two parts: collision avoid- ance with nearby drones and with static objects. For the first part, the server is responsible to find groups of drones that are near with each other and send them immediate flight control messages to avoid the possible accident. At the same time, send warning notification messages to RCs that are in control of the drones and switch the mode to autonomous. The second part could be achieved by training convolutional neural networks of visual recognition and implementing it on the RCs so that the drones can react to the objects immediately with low latency.
+Besides, collision avoidance system is also important. It can be divided into two parts: collision avoidance with nearby drones and with static objects. For the first part, the server is responsible to find groups of drones that are near with each other and send them immediate flight control messages to avoid the possible accident. At the same time, send warning notification messages to RCs that are in control of the drones and switch the mode to autonomous. The second part could be achieved by training convolutional neural networks of visual recognition and implementing it on the RCs so that the drones can react to the objects immediately with low latency.
