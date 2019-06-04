@@ -4,8 +4,8 @@ title                   = "Guocheng's Space"
 theme                   = "hugo-future-imperfect-slim"
 preserveTaxonomyNames   = true
 paginate                = 3
-disqusShortname         = "shortname"
-googleAnalytics         = ""
+disqusShortname         = "guocheng-com"
+googleAnalytics         = "UA-92477600-1"
 pluralizeListTitles     = false
 disableLanguages        = [""]
 
@@ -90,7 +90,7 @@ disableLanguages        = [""]
   # prefer to use. See Staticman.yml for additional settings.
   [params.staticman]
     # Sets Statiman to be active
-    staticman           = true
+    staticman           = false
     # Sets the location for Staticman to connect to
     username            = ""
     repo                = ""
