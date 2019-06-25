@@ -1,6 +1,6 @@
 +++
 author = "Guocheng Wei"
-categories = ["Cellualr Network", "Android", "Aerial Vehicle", "Cloud Service"]
+categories = ["Cellular Network", "Android", "Aerial Vehicle", "Cloud Service"]
 tags = ["MobileInsight", "LTE", "DJI", "AT&T", "Latency", "Drone", "GCP"]
 date = "2019-05-31"
 description = "Connect Drones Into Cellular Network"
@@ -8,16 +8,9 @@ featured = "release_drone.jpg"
 featuredalt = "Release Drone"
 featuredpath = "date"
 linktitle = ""
-title = "Cellular Drone"
+Title = "Cellular Drone"
 type = "post"
-
 +++
-
-# Thanks!
-
-Photo by [Jacob Owens](https://unsplash.com/@jakobowens1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/drone-dji?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-___
 
 ## Motivation
 Over the past few years, drones have become central to the functions of various businesses and governmental organizations and have managed to pierce through areas where certain industries were either stagnant or lagging behind.
@@ -65,17 +58,28 @@ So I decided to run experiments at the maximum 10m in height to decrease the inf
 
 ### Specs
 1. DJI Phantom 4 Pro v2.0
+
 2. DJI Android SDK
+
 3. GCP
-	GCP hosts my server in the cloud. I use Cloud DNS to lower latency and increase scalability, Cloud Load Balancing to scale the application on Google Compute Engine from zero to full-throttle with no pre- warming needed, and a instance group to host a kubernetes container connecting to a PostgreSQL Cloud SQL server.
+
+	> GCP hosts my server in the cloud. I use Cloud DNS to lower latency and increase scalability, Cloud Load Balancing to scale the application on Google Compute Engine from zero to full-throttle with no pre- warming needed, and a instance group to host a kubernetes container connecting to a PostgreSQL Cloud SQL server.
+
 4. PostgreSQL
+
 5. GraphQL
-	The reason why I chose GraphQL api instead of REST api is because of latency. REST api uses multiple endpoints, and each endpoint will introduce latency. GraphQL api solves this problem by combining and integrating multiple endpoints into one. So it can decrease the end-to-end latency.
+
+	> The reason why I chose GraphQL api instead of REST api is because of latency. REST api uses multiple endpoints, and each endpoint will introduce latency. GraphQL api solves this problem by combining and integrating multiple endpoints into one. So it can decrease the end-to-end latency.
+
 6. Apollo
-	Apollo is the framework of GraphQL that can help me to develop the Android app easier.
+
+	> Apollo is the framework of GraphQL that can help me to develop the Android app easier.
+
 7. Android
+
 8. AT&T
-	I run all experiments in the AT&T network.
+
+	> I run all experiments in the AT&T network.
 
 [Cellular Drone Project Development](/blog/cellular-drone-development) is the blog focused on the details of the development. If you are interested in how I implemented all these, go check it out.
 
@@ -116,3 +120,7 @@ There are some main drawbacks in my architecture. The first is the two-hops comm
 Live streaming video is another essential feature in the commercial drone industry. The DR is able to upload streaming video packets to the server and the server will publish the video packets to the RCs. Therefore, latency, uplink performance and downlink performance will be the KPIs.
 
 Besides, collision avoidance system is also important. It can be divided into two parts: collision avoidance with nearby drones and with static objects. For the first part, the server is responsible to find groups of drones that are near with each other and send them immediate flight control messages to avoid the possible accident. At the same time, send warning notification messages to RCs that are in control of the drones and switch the mode to autonomous. The second part could be achieved by training convolutional neural networks of visual recognition and implementing it on the RCs so that the drones can react to the objects immediately with low latency.
+
+# Thanks!
+
+Photo by [Jacob Owens](https://unsplash.com/@jakobowens1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/drone-dji?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
