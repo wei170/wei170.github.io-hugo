@@ -1,7 +1,7 @@
 +++
 author = "Guocheng Wei"
-categories = ["Cellular Network", "Android", "Aerial Vehicle", "Cloud Service"]
-tags = ["MobileInsight", "LTE", "DJI", "AT&T", "Latency", "Drone", "GCP"]
+categories = ["Project Report"]
+tags = ["Cellular Network", "MobileInsight", "LTE", "AT&T", "Latency", "Drone", "DJI", "Aerial Vehicle", "Android", "GraphQL", "Apollo", "Cloud Service", "GCP"]
 date = "2019-05-31"
 description = "Connect Drones Into Cellular Network"
 featured = "release_drone.jpg"

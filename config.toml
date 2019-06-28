@@ -14,7 +14,7 @@ disableLanguages        = [""]
   # multiple/additional files if necessary. The standard theme files can be loaded
   # by adding the value, "default". Default includes the add-on.css and and-on.js.
   # Example: ["default", "/path/to/file"]
-  cssFiles              = ["default"]
+  cssFiles              = ["default", "/css/_index.css", "/css/mathjax-style.css"]
   jsFiles               = ["default"]
   # Sets options for highlight.js
   highlightjs           = true
@@ -31,7 +31,7 @@ disableLanguages        = [""]
 
   [params.meta]
     # Sets the meta tag description
-    description         = "I am Guocheng Wei, passionate in core network, ML, and software engineer. Love food, hiking, and snow skiing."
+    description         = "I am Guocheng Wei, passionate in core network, ML, and software engineer. I'll share my side projects, paper readings, trending news, and my life here with you."
     # Sets the meta tag author
     author              = "Guocheng Wei"
     # If you would like to add more comprehensive favicon support passed root

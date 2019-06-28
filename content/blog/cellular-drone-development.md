@@ -1,6 +1,7 @@
 +++
 author = "Guocheng Wei"
-categories = ["Cellular Network", "Android", "Aerial Vehicle", "Cloud Service"]
+categories = ["Project Overview"]
+tags = ["Demo", "Project Breakdown"]
 date = "2019-06-24"
 description = "Demo and break down each development of the project"
 featured = "cellular_drone_dev_thumnail_0.png"
