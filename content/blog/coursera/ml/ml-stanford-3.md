@@ -47,6 +47,22 @@ h_\theta(x) = P(y=1 | x ; \theta) = 1 - P(y=0 | x ; \theta) \\\
 P(y = 0 | x;\theta) + P(y = 1 | x ; \theta) = 1
 $$
 
+Simplied probability function:
+
+$$
+P(y|x) = h\_\theta(x)^{y} (1 - h\_\theta(x))^{1-y}
+$$
+
+So in order to decease the cost:
+
+$$
+\begin{align}
+\uparrow \log(P(y|x)) & = \log(h\_\theta(x)^{y} (1 - h\_\theta(x))^{1-y}) \newline
+& = y \log(h\_\theta(x)) + (1-y) \log(1 - h\_\theta(x)) \newline
+& = - J(\theta) \downarrow
+\end{align}
+$$
+
 ---
 ### Decision Boundary
 The **decision boundary** is the line that separates the area where y = 0 and where y = 1.
@@ -134,7 +150,7 @@ In linear regression $h\_\theta(x) = \theta^T x$, while in logistic regression $
 A **vectorized implementation** is:
 
 $$
-\theta := \theta - \frac{\sigma}{m} X^T (g(X\theta) - \vec{y})
+\theta := \theta - \frac{\alpha}{m} X^T (g(X\theta) - \vec{y})
 $$
 
 #### Partial derivative of J(θ)
