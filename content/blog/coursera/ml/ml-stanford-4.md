@@ -43,7 +43,7 @@ Our "theta" parameters are sometimes instead called **"weights"** in the neural 
 We can have intermediate layers of nodes between the input and output layers called the **"hidden layer"**.
 
 
-![Neuron Model](/img/2019/07/neuron_model.png)
+![Neural Network Model](/img/2019/07/neuron_model.png)
 
 $$
 \begin{align}
@@ -52,7 +52,7 @@ $$
 \end{align}
 $$
 
-For example, one hidden layer neuron network:
+For example, one hidden layer neural network:
 
 $$
 \begin{bmatrix}x\_0 \newline x\_1 \newline x\_2 \newline x\_3\end{bmatrix}
@@ -72,6 +72,16 @@ $$
 The dimensions of these matrices of weights is determined as follows:
 
 $\text{If network has $s\_j$ units in layer $j$ and $s\_{j+1}$ units in layer $j+1$, then $\Theta^{(j)}$ will be of dimension $s\_{j+1} \times (s\_j + 1)$.}$
+
+#### Actication Functions
+
+In the deep learning course provided by deeplearning.ai, sigmoid function is not the only activation function in neural network. Most of the time for hidden units, tanh function performs better than sigmoid function because the values between plus 1 and minus 1, the mean of the activations that come out of your head, and they are closer to having a 0 mean. It kind of has the effect of centering your data so that the mean of your data is closer to 0 rather than, maybe 0.5. And this actually makes learning for the next layer a little bit easier. 
+
+While, for the output layer of the binary classification, use the sigmoid function. Other than that, **tanh function is always a superior choice**.
+
+ReLU is rectifier activation function, and the leaky ReLU: https://en.wikipedia.org/wiki/Rectifier_(neural_networks)
+
+![Activation Functions](/img/2019/07/activation_funcs.png)
 
 ---
 ### Examples and Intuition Ⅰ
@@ -116,6 +126,7 @@ $$
 \end{align}
 $$
 
+---
 ### Examples and Intuition Ⅱ
 The $\theta$ matrices for AND, NOR, and OR are:
 
@@ -174,6 +185,7 @@ $$
 
 ![XNOR model](/img/2019/07/xnor_model.png)
 
+---
 ### Multiclass Classification
 If we want to classify our data into four final resulting classes, (for example classificate the image to cat, dog, bird, or people):
 
@@ -213,7 +225,7 @@ $$
 \end{align}
 $$
 
-THen, our resulting hypothesis for one set of inputs looks like:
+Then, our resulting hypothesis for one set of inputs looks like:
 $$
 h\_\Theta(x) = \begin{bmatrix}
   0 \newline

@@ -5,3 +5,7 @@ code.has-jax {
   border: inherit;
   color: #515151;
 }
+
+.smallEquation {
+  font-size: 70%;
+}
