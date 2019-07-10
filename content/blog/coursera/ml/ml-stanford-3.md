@@ -195,7 +195,7 @@ $$
 * Train a logistic regression classifier $h\_\theta(x)$ for each class￼ to predict the probability that ￼$y = i￼$.
 * To make a prediction on a new x, pick the class ￼that maximizes $h\_\theta(x)$
 
-<hr style="height: 10px; background-color:grey; opcaity: 0.3;"/>
+<hr style="height: 10px; background-color:grey; opcaity: 0.25;"/>
 # Regularization
 
 ### Overfitting and Underfitting
