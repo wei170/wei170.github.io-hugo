@@ -8,6 +8,8 @@ disqusShortname         = "guocheng-com"
 googleAnalytics         = "UA-92477600-1"
 pluralizeListTitles     = false
 disableLanguages        = [""]
+enableRobotsTXT         = true
+canonifyURLs            = true
 
 [params]
   # Loads CSS and JavaScript files. The variable is an array so that you can load
