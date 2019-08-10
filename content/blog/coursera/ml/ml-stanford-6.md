@@ -45,7 +45,7 @@ Model selection:
 2. Find the polynomial degree d with the least error using the cross validation set.
 3. Estimate the generalization error using the test set with $J\_{test}(\Theta^{(d)})$ (d = theta from polynomial with lower error);
 
-![CV Model](/img/2019/07/cv_model.png)
+{{< fancybox path="/img/2019/07" file="cv_model.png" caption="CV Model" gallery="Note Images" >}}
 
 ---
 ### Diagnosing Bias vs. Variance
@@ -54,7 +54,7 @@ The training error will tend to **decrease** as we increase the degree d of the 
 
 At the same time, the cross validation error will tend to **decrease** as we increase d up to a point, and then it will **increase** as d is increased, forming a convex curve.
 
-<img src="/img/2019/07/bias_vs_variance.png" alt="Bias vs. Variance" style="width:300px;"/>
+{{< fancybox path="/img/2019/07" file="bias_vs_variance.png" caption="Bias vs. Variance" gallery="Note Images" >}}
 
 ---
 ### Regularization and Bias/Variance
@@ -63,7 +63,7 @@ At the same time, the cross validation error will tend to **decrease** as we inc
 * Intermediate $\lambda$: just right
 * Small $\lambda$: High variance (overfitting)
 
-<img src="/img/2019/07/large_small_lambda.png" alt="Large/Small Lambda" style="width:300px;"/>
+{{< fancybox path="/img/2019/07" file="large_small_lambda.png" caption="Large/Small Lambda" gallery="Note Images" >}}
 
 ---
 **In order to choose the model and the regularization $\lambda$**, we need:
@@ -91,7 +91,7 @@ At the same time, the cross validation error will tend to **decrease** as we inc
 
 If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much.
 
-<img src="/img/2019/07/learning_curve_high_bias.png" alt="Learning Curve with High Bias" style="width:300px;"/>
+{{< fancybox path="/img/2019/07" file="learning_curve_high_bias.png" caption="Learning Curve with High Bias" gallery="Note Images" >}}
 
 **With high variance**:
 
@@ -99,7 +99,7 @@ If a learning algorithm is suffering from high bias, getting more training data 
 
 * Large training set size: $J\_{train}(\Theta)$ increases with training set size and $J\_{CV}(\Theta)$ continues to decrease without leveling off. Also, $J\_{train}(\Theta) < J\_{CV}(\Theta)$ but the difference between them remains significant.
 
-<img src="/img/2019/07/learning_curve_high_variance.png" alt="Learning Curve with High Variance" style="width:300px;"/>
+{{< fancybox path="/img/2019/07" file="learning_curve_high_variance.png" caption="Learning Curve with High Variance" gallery="Note Images" >}}
 
 ---
 ### Deciding What to Do Next Revisited
@@ -130,7 +130,7 @@ This usually happens with **skewed classes**.
 
 For this we can use **Precision/Recall**
 
-![Error Table](/img/2019/07/error_table.jpg)
+{{< fancybox path="/img/2019/07" file="error_table.jpg" caption="Error Table" gallery="Note Images" >}}
 
 **Precision**:
 $$

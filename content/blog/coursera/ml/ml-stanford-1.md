@@ -38,16 +38,16 @@ The mean is halfed as a convenience for the computation of **the gradient descen
 #### Intuition Ⅰ
 To simplify the visualization of the cost function, assume $\theta_0$ is 0, which means the cost function is $J(\theta_1)$
 
-![Intuition of theta to find the minimal cost function](/img/2019/06/intuition_1.png)
+{{< fancybox path="/img/2019/06" file="intuition_1.png" caption="Intuition of theta to find the minimal cost function" gallery="Note Images" >}}
 
 #### Intuition Ⅱ
 If the $\theta_0$ is not 0, then the **contour plot** will look like this:
 
-![3D Contour Plot](/img/2019/06/contour_plot_3d.png)
+{{< fancybox path="/img/2019/06" file="contour_plot_3d.png" caption="3D Contour Plot" gallery="Note Images" >}}
 
 If projected onto a 2d plot
 
-![2D Contour Plot](/img/2019/06/contour_plot_2d.png)
+{{< fancybox path="/img/2019/06" file="contour_plot_2d.png" caption="2D Contour Plot" gallery="Note Images" >}}
 
 Key features:
 
@@ -58,7 +58,7 @@ Key features:
 ### Gradient Descent
 To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point.
 
-![Example of Gradient Descent](/img/2019/06/gradient_descent_example.png)
+{{< fancybox path="/img/2019/06" file="gradient_descent_example.png" caption="Example of Gradient Descent" gallery="Note Images" >}}
 
 The way we do this is by taking the derivative (the tangential line to a function) of our cost function. The slope of the tangent is the derivative at that point and it will give us a direction to move towards. We make steps down the cost function in the direction with the steepest descent. The size of each step is determined by the parameter α, which is called the **learning rate**.
 
@@ -82,14 +82,14 @@ $$\theta_1 := \theta_1 - \alpha \frac{\partial}{\partial \theta_1} J(\theta_1)$$
 
 **When it is positive, the value of $\theta_1$ decreases.**
 
-![How slope affects the movement of theta](/img/2019/06/gradient_descent_intuition_slope.png)
+{{< fancybox path="/img/2019/06" file="gradient_descent_intuition_slope.png" caption="How slope affects the movement of theta" gallery="Note Images" >}}
 
 #### Intuition Ⅱ
 We should adjust our parameter $\alpha$ to ensure that the gradient descent algorithm converges in a reasonable time. 
 
 Failure to converge or too much time to obtain the minimum value imply that our step size is wrong.
 
-![Step size affects the convergence](/img/2019/06/gradient_descent_intuition_step.png)
+{{< fancybox path="/img/2019/06" file="gradient_descent_intuition_step.png" caption="Step size affects the convergence" gallery="Note Images" >}}
 
 #### Intuition Ⅲ
 **Gradient descent can converge to a local minimum, even with the learning rate is fixed.**

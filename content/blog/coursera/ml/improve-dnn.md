@@ -28,7 +28,7 @@ What we learn in [Week 3](/blog/coursera/ml/ml-stanford-3/#regularization) is **
 
 For reducing overfitting
 
-![Dropout](/img/2019/07/dropout.jpg)
+{{< fancybox path="/img/2019/07" file="dropout.jpg" caption="Dropout" gallery="Note Images" >}}
 
 Implementing Dropout (illustrate with l = 3, and keep-prob = 0.8):
 ```python
@@ -57,7 +57,7 @@ One big downside of drop out is that the cost function **J is no longer well-def
 	* We will pick the point at which the training set error and dev set error are best (lowest training cost with lowest dev cost).
 	* We will take these parameters as the best parameters.
 
-![Early Stopping](/img/2019/07/early_stoppping.png)
+{{< fancybox path="/img/2019/07" file="early_stoppping.png" caption="Early Stopping" gallery="Note Images" >}}
 
 ---
 ### Vanishing / Exploding Gradient
@@ -119,7 +119,7 @@ for t = 1:num_of_batches                         # this is called an epoch
 	update_parameters(grads)
 ```
 
-![mini-batch gradient descent](/img/2019/07/mini-batch_gradient_descent.png)
+{{< fancybox path="/img/2019/07" file="mini-batch_gradient_descent.png" caption="Mini-Batch Gradient Descent" gallery="Note Images" >}}
 
 #### Mini-batch size:
 
@@ -163,7 +163,7 @@ Intuition:
 * Increase $\beta$, the shift the curve slightly to the right.
 * Decreasing $\beta$ will create more oscillation within the curve.
 
-![exponentially weighted average](/img/2019/07/exponentially_weighted_average.png)
+{{< fancybox path="/img/2019/07" file="exponentially_weighted_average.png" caption="Exponentially Weighted Average]" gallery="Note Images" >}}
 
 #### Bias correction in exponentially weighted averages
 When $V\_0 = 0$, the bias of the weighted averages is shifted and the accuracy suffers at the start
@@ -207,7 +207,7 @@ $$
 1. Name the beta $\beta\_2$ is to differentiate the beta in momentum
 2. $\epsilon$ is used to ensure denominator is not zero
 
-![Rmsprop](/img/2019/07/rmsprop.png)
+{{< fancybox path="/img/2019/07" file="rmsprop.png" caption="RMSprop" gallery="Note Images" >}}
 
 ---
 ### Adam
@@ -370,7 +370,7 @@ $$
 S\_i = \frac{e^{Z\_i^{[L]}}}{\sum\_{i=i}^K e^{Z\_j^{[L]}}} \text{ for } i = 1, \ ..., \ K
 $$
 
-![Softmax Layer](/img/2019/07/softmax_layer.png)
+{{< fancybox path="/img/2019/07" file="softmax_layer.png" caption="Softmax Layer" gallery="Note Images" >}}
 
 #### Training a Softmax classifier
 

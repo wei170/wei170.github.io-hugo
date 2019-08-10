@@ -43,7 +43,7 @@ Our "theta" parameters are sometimes instead called **"weights"** in the neural 
 We can have intermediate layers of nodes between the input and output layers called the **"hidden layer"**.
 
 
-![Neural Network Model](/img/2019/07/neuron_model.png)
+{{< fancybox path="/img/2019/07" file="neuron_model.png" caption="Neural Network Model" gallery="Note Images" >}}
 
 $$
 \begin{align}
@@ -81,7 +81,7 @@ While, for the output layer of the binary classification, use the sigmoid functi
 
 ReLU is rectifier activation function, and the leaky ReLU: https://en.wikipedia.org/wiki/Rectifier_(neural_networks)
 
-![Activation Functions](/img/2019/07/activation_funcs.png)
+{{< fancybox path="/img/2019/07" file="activation_funcs.png" caption="Activation Functions" gallery="Note Images" >}}
 
 ---
 ### Examples and Intuition Ⅰ
@@ -183,7 +183,7 @@ $$
 \end{align}
 $$
 
-![XNOR model](/img/2019/07/xnor_model.png)
+{{< fancybox path="/img/2019/07" file="xnor_model.png" caption="XNOR Model" gallery="Note Images" >}}
 
 ---
 ### Multiclass Classification

@@ -108,9 +108,9 @@ $$
 \end{align}
 $$
 
-<div style="text-align: center;">
-	<img src="/img/2019/06/log_cost_func_y0.png" style="width: 300px !important;"/>
-	<img src="/img/2019/06/log_cost_func_y1.png" style="width: 300px !important;"/>
+<div style="display: flex;">
+  {{< fancybox path="/img/2019/06" file="log_cost_func_y0.png" caption="J vs. h" gallery="Note Images" >}}
+  {{< fancybox path="/img/2019/06" file="log_cost_func_y1.png" caption="J vs. h" gallery="Note Images" >}}
 </div>
 
 ---

@@ -62,7 +62,7 @@ $s\_{i}$ is  the range of values (max - min), is the standard deviation.
 ### Debugging Gradient Descent by Learning Rate
 Make a plot with number of iterations on the x-axis. Now plot the cost function, $J(\theta)$ over the number of iterations of gradient descent. If $J(\theta)$ ever increases, then you probably need to decrease $\alpha$.
 
-![plot with # of iterations](/img/2019/06/check_learning_rate.png)
+{{< fancybox path="/img/2019/06" file="check_learning_rate.png" caption="Plot With Number of Iterations" gallery="Note Images" >}}
 
 **If $\alpha$ is too small: slow convergence.** \\
 **If $\alpha$ is too large: ￼may not decrease on every iteration and thus may not converge.**
